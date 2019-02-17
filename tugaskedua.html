@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Membuat Div Berjalan</title>
+	<style type="text/css">
+
+		body {
+			margin:1%; 
+			padding:1%; 
+		}
+		
+		#bulat1 {
+			background:#32CD32;
+			border-radius:100%; 
+			width:50px;
+			height:50px;
+		}
+		#kotak { 
+			background:#66CDAA;
+			width:50%;
+			height:500px;
+
+		}
+
+		#bulat2 {
+			background:#32CD32;
+			border-radius:100%; 
+			width:50px;
+			height:50px;
+			position:relative; 
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<marquee 
+	direction="right" 
+	behavior="slide" 
+	width="50%" 
+	onmouseover="this.stop()" 
+	onmouseout="this.start()"
+	scrollamount="5"
+	loop="1"
+	>
+			<div id=bulat1></div>
+	</marquee>
+			<div id=kotak></div>
+	<marquee 
+	direction="left" 
+	behavior="slide" 
+	width="50%"
+	loop="1"
+	>
+			<div id=bulat2></div>
+	</marquee>
+
+</body>
+
+<!--
+	1. direction="left/right/up/down" = untuk mengatur arah gerakkan yang diinginkan
+	2. behavior="scroll/slide/alternate" = untuk mengatur jenis gerakkan
+	3. witdh = untuk mengatur lebar media yang akan menampung marquee
+	4. onmouseover="this.stop()" onmouseout="this.start()" digunakan jika ingin berhenti bergerak jika ada mouse yang mengenainya.
+	5. scrollamount = untuk mengatur kecepatan berjalan
+	6. loop = untuk menentukan berapa kali konten marquee berulang dengan nilai defaultnya adalah tak terbatas
+
+	-->
+
+</html>
